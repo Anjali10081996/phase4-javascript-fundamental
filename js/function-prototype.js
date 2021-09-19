@@ -6,7 +6,7 @@ function Account(id,name,balance,email){
     this.email=email;
 }
 
-//modify account prototype
+//modify account prototype directly(add new property)
 //object level inheritance
 Account.prototype.state = "Jharkhand"
 Account.prototype.Nationality = "Indian"
@@ -22,6 +22,7 @@ let account2 = new Account(102,"john", 87664546,"xyz@gmail.com");
 account2.bankName ="Pnb bank"; 
 console.log(account2);
 
+//access prototype properties and method
 console.log(account.showBalance())
 console.log(account.Nationality);
 console.log(account.state);
